@@ -28,7 +28,7 @@
         always open. I typically respond within 24 hours.</p>
 
       <div class="info-cards">
-        <a href="mailto:naraish@email.com" class="info-card anim">
+        <a href="mailto:naraishkumar55@email.com" class="info-card anim">
           <div class="info-card-icon">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -57,18 +57,18 @@
             </div>
           </div>
         </a>
-        <div class="info-card anim" style="cursor:default;">
-          <div class="info-card-icon">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-            </svg>
-          </div>
-          <div>
-            <div class="info-card-label">Location</div>
-            <div class="info-card-value">Rahim Yar Khan, Pakistan</div>
-          </div>
-        </div>
+        <a href="https://maps.app.goo.gl/qCnRERAez8QdV8DD8" target="_blank" class="info-card anim">
+            <div class="info-card-icon">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+            </div>
+            <div>
+                <div class="info-card-label">Location</div>
+                <div class="info-card-value">Rahim Yar Khan, Pakistan</div>
+            </div>
+        </a>
         <a href="https://www.linkedin.com/in/naraish-kumar01/" target="_blank" class="info-card anim">
           <div class="info-card-icon">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
@@ -98,29 +98,7 @@
         <div class="form-title">Send a Message</div>
         <p class="form-subtitle">Fill out the form below and I'll get back to you as soon as possible.</p>
 
-        <!-- Service Selection -->
-        <div style="margin-bottom:20px;">
-          <label style="font-size:.82rem;font-weight:700;color:var(--navy);display:block;margin-bottom:10px;">What do
-            you need? <span style="color:var(--blue)">*</span></label>
-          <div class="service-grid">
-            <div class="service-opt">
-              <input type="radio" name="service" id="s1" value="Web App" checked />
-              <label for="s1"><span class="so-icon">🌐</span> Web App</label>
-            </div>
-            <div class="service-opt">
-              <input type="radio" name="service" id="s2" value="API Dev" />
-              <label for="s2"><span class="so-icon">🔌</span> API Dev</label>
-            </div>
-            <div class="service-opt">
-              <input type="radio" name="service" id="s3" value="Consultation" />
-              <label for="s3"><span class="so-icon">💬</span> Consultation</label>
-            </div>
-            <div class="service-opt">
-              <input type="radio" name="service" id="s4" value="Other" />
-              <label for="s4"><span class="so-icon">✨</span> Other</label>
-            </div>
-          </div>
-        </div>
+
 
         <div class="form-row">
           <div class="form-group">

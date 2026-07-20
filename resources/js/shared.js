@@ -70,17 +70,7 @@
             </svg>
           </a>
 
-          <!-- WhatsApp -->
-         <a href="https://wa.me/923060267456"
-            class="footer-social"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="WhatsApp">
 
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.52 3.48A11.91 11.91 0 0012.06 0C5.53 0 .24 5.29.24 11.82c0 2.09.55 4.14 1.6 5.96L0 24l6.37-1.67a11.81 11.81 0 005.69 1.45h.01c6.53 0 11.82-5.29 11.82-11.82a11.75 11.75 0 00-3.37-8.48zM12.07 21.5h-.01a9.77 9.77 0 01-4.97-1.36l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.75 9.75 0 01-1.5-5.2C2.23 6.04 6.61 1.67 12.07 1.67c2.6 0 5.05 1.01 6.89 2.86a9.68 9.68 0 012.84 6.89c0 5.46-4.38 9.88-9.73 9.88z"/>
-            </svg>
-         </a>
 
           <!-- Email -->
           <a href="mailto:naraishkumar55@gmail.com"
@@ -116,6 +106,18 @@
             </svg>
         </a>
 
+        <!-- WhatsApp -->
+        <a href="https://wa.me/923060267456"
+            class="footer-social"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="WhatsApp">
+
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.91 11.91 0 0 0 12.06 0C5.53 0 .24 5.29.24 11.82c0 2.09.55 4.14 1.6 5.96L0 24l6.37-1.67a11.81 11.81 0 0 0 5.69 1.45h.01c6.53 0 11.82-5.29 11.82-11.82a11.75 11.75 0 0 0-3.37-8.48zM12.07 21.5h-.01a9.77 9.77 0 0 1-4.97-1.36l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.75 9.75 0 0 1-1.5-5.2C2.23 6.04 6.61 1.67 12.07 1.67c2.6 0 5.05 1.01 6.89 2.86a9.68 9.68 0 0 1 2.84 6.89c0 5.46-4.38 9.88-9.73 9.88z"/>
+            </svg>
+        </a>
+
         </div>
       </div>
 
@@ -147,7 +149,7 @@
         <ul>
           <li><a href="mailto:naraishkumar55@gmail.com">naraishkumar55@gmail.com</a></li>
           <li><a href="tel:+923060267456">+92 306 0267456</a></li>
-          <li><a href="">Rahim Yar Khan, Pakistan</a></li>
+          <li><a href="https://maps.app.goo.gl/qCnRERAez8QdV8DD8">Rahim Yar Khan, Pakistan</a></li>
         </ul>
       </div>
 

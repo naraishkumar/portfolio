@@ -76,18 +76,13 @@
                 <a href="https://wa.me/923060267456" class="social-link" title="WhatsApp" target="_blank">
                     <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
                         <path
-                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347" />
+                            d="M12.032 21.965c-1.821 0-3.646-.497-5.256-1.436l-.378-.227-3.994.914 1.07-3.892-.248-.399a9.743 9.743 0 0 1-1.506-5.226c0-5.39 4.384-9.774 9.772-9.774 2.606 0 5.057 1.015 6.903 2.861a9.698 9.698 0 0 1 2.86 6.902c0 5.389-4.384 9.773-9.773 9.773zm0-18.057c-4.586 0-8.316 3.73-8.316 8.315 0 1.832.596 3.606 1.72 5.066l.21.274-.546 1.99 2.054-.562.287.166a8.315 8.315 0 0 0 4.485 1.328h.01c4.586 0 8.316-3.73 8.316-8.315 0-2.22-.864-4.307-2.434-5.877a8.257 8.257 0 0 0-5.877-2.434zm4.772 10.489c-.057-.093-.208-.149-.436-.261-.228-.112-1.352-.667-1.562-.744-.209-.077-.362-.112-.514.112-.152.224-.589.744-.722.897-.133.153-.266.172-.494.06-.228-.112-.961-.354-1.83-1.13-.677-.607-1.133-1.356-1.266-1.586-.133-.229-.014-.354.1-.469.103-.103.229-.267.343-.401.114-.134.152-.23.228-.383.076-.153.038-.286-.019-.4-.057-.114-.514-1.238-.704-1.694-.186-.445-.375-.389-.516-.396-.133-.008-.286-.01-.438-.01-.152 0-.399.057-.608.286-.209.229-.798.779-.798 1.9 0 1.121.817 2.205.93 2.358.114.153 1.608 2.454 3.895 3.442.544.234.969.374 1.3.479.546.174 1.043.15 1.436.09.438-.067 1.352-.553 1.542-1.087.19-.534.19-.992.133-1.087z" />
                     </svg>
                 </a>
 
             </div>
         </div>
-        <div class="hero-right">
-            <div style="position:relative">
-                <div class="float-badge b1"><span>🚀</span> 4+ Years Exp.</div>
-                <div class="float-badge b2"><span>✅</span> Open to Work</div>
-            </div>
-        </div>
+
     </section>
 
     <!-- MARQUEE -->
@@ -211,151 +206,146 @@
         </div>
     </section>
 
-
     <!-- TESTIMONIALS -->
-    {{-- ══════════════════════════════════════════
-    TESTIMONIALS — Slider (3 visible, auto 5s)
-    Replace the old two-grid testimonial section
-    ══════════════════════════════════════════ --}}
+    <section class="testimonial-section">
+        <div class="section-badge anim">
+            <span class="dot"></span>What Clients Say
+        </div>
+        <h2 class="section-heading anim">
+            Happy <span class="blue">Clients</span>
+        </h2>
 
-    <!-- TESTIMONIALS -->
-<section class="testimonial-section">
-    <div class="section-badge anim">
-        <span class="dot"></span>What Clients Say
-    </div>
-    <h2 class="section-heading anim">
-        Happy <span class="blue">Clients</span>
-    </h2>
+        <!-- SLIDER VIEWPORT -->
+        <div class="ts-viewport">
+            <div class="ts-track" id="ts-track">
 
-    <!-- SLIDER VIEWPORT -->
-    <div class="ts-viewport">
-        <div class="ts-track" id="ts-track">
-
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">Excellent work! Website ka design professional hai. Colors aur layout clean aur
-                    modern hain. Website easy to navigate hai aur business ko ek strong online presence deti hai.
-                    Overall very satisfied with the quality and delivery.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">RYK</div>
-                    <div>
-                        <div class="testi-name">CEO</div>
-                        <div class="testi-role">RYK Sanitary and Tiles Store</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">Excellent work! Website ka design professional hai. Colors aur layout clean aur
+                        modern hain. Website easy to navigate hai aur business ko ek strong online presence deti hai.
+                        Overall very satisfied with the quality and delivery.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">RYK</div>
+                        <div>
+                            <div class="testi-name">CEO</div>
+                            <div class="testi-role">RYK Sanitary and Tiles Store</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">As the owner of Mehak's Nail Studio, I am extremely satisfied with the website.
-                    It perfectly represents my brand and showcases services in a very elegant way. Since launch, we have
-                    received more WhatsApp inquiries and better customer engagement.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">MS</div>
-                    <div>
-                        <div class="testi-name">Mehak Shafi</div>
-                        <div class="testi-role">Nail Artist, Mehak Nail Studio</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">As the owner of Mehak's Nail Studio, I am extremely satisfied with the website.
+                        It perfectly represents my brand and showcases services in a very elegant way. Since launch, we have
+                        received more WhatsApp inquiries and better customer engagement.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">MS</div>
+                        <div>
+                            <div class="testi-name">Mehak Shafi</div>
+                            <div class="testi-role">Nail Artist, Mehak Nail Studio</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">I am very satisfied with the website developed for my electrical services. It
-                    clearly presents my services and pricing in a professional way. Customers can easily contact me and
-                    the inquiries have increased significantly.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">SK</div>
-                    <div>
-                        <div class="testi-name">Shevak Kumar</div>
-                        <div class="testi-role">Electrician</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">I am very satisfied with the website developed for my electrical services. It
+                        clearly presents my services and pricing in a professional way. Customers can easily contact me and
+                        the inquiries have increased significantly.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">SK</div>
+                        <div>
+                            <div class="testi-name">Shevak Kumar</div>
+                            <div class="testi-role">Electrician</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">We are extremely impressed with the website developed for Kingsmen Royal Salon.
-                    The design reflects our premium branding and makes it easy for clients to explore services and
-                    pricing. It has improved our online presence and trust.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">HS</div>
-                    <div>
-                        <div class="testi-name">Kingsmen Royal Salon</div>
-                        <div class="testi-role">Hair Styling & Grooming</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">We are extremely impressed with the website developed for Kingsmen Royal Salon.
+                        The design reflects our premium branding and makes it easy for clients to explore services and
+                        pricing. It has improved our online presence and trust.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">HS</div>
+                        <div>
+                            <div class="testi-name">Kingsmen Royal Salon</div>
+                            <div class="testi-role">Hair Styling & Grooming</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">We are highly satisfied with the real estate web application. It is fast,
-                    user-friendly, and well-structured. Property listings and inquiry flow work smoothly and it has
-                    improved our lead generation significantly.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">RE</div>
-                    <div>
-                        <div class="testi-name">Real Estate Company</div>
-                        <div class="testi-role">Management Agency</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">We are highly satisfied with the real estate web application. It is fast,
+                        user-friendly, and well-structured. Property listings and inquiry flow work smoothly and it has
+                        improved our lead generation significantly.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">RE</div>
+                        <div>
+                            <div class="testi-name">Real Estate Company</div>
+                            <div class="testi-role">Management Agency</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">He demonstrated strong full-stack development skills and delivered high-quality
-                    work consistently. His ability to understand requirements and build scalable solutions made him a
-                    valuable team member.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">DS</div>
-                    <div>
-                        <div class="testi-name">Devicon Software House</div>
-                        <div class="testi-role">Software Company</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">He demonstrated strong full-stack development skills and delivered high-quality
+                        work consistently. His ability to understand requirements and build scalable solutions made him a
+                        valuable team member.</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">DS</div>
+                        <div>
+                            <div class="testi-name">Devicon Software House</div>
+                            <div class="testi-role">Software Company</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">We worked with him at Webpenter Inc and found him very professional and
-                    technically strong. He delivered multiple web applications on time with clean and maintainable code.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">WP</div>
-                    <div>
-                        <div class="testi-name">Webpenter Inc</div>
-                        <div class="testi-role">IT Solutions Company</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">We worked with him at Webpenter Inc and found him very professional and
+                        technically strong. He delivered multiple web applications on time with clean and maintainable code.
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">WP</div>
+                        <div>
+                            <div class="testi-name">Webpenter Inc</div>
+                            <div class="testi-role">IT Solutions Company</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="testi-card">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">A dedicated developer who contributed effectively at Deixtra Pvt Limited. His
-                    technical expertise and professionalism were impressive, and he delivered reliable web solutions.</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">DL</div>
-                    <div>
-                        <div class="testi-name">Deixtra Pvt Limited</div>
-                        <div class="testi-role">Software Company</div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">A dedicated developer who contributed effectively at Deixtra Pvt Limited. His
+                        technical expertise and professionalism were impressive, and he delivered reliable web solutions.
+                    </p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">DL</div>
+                        <div>
+                            <div class="testi-name">Deixtra Pvt Limited</div>
+                            <div class="testi-role">Software Company</div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-        </div><!-- /.ts-track -->
-    </div><!-- /.ts-viewport -->
+            </div><!-- /.ts-track -->
+        </div><!-- /.ts-viewport -->
 
-    <!-- PROGRESS BAR -->
-    <div class="ts-progress">
-        <div class="ts-bar" id="ts-bar"></div>
-    </div>
+        <!-- PROGRESS BAR -->
+        <div class="ts-progress">
+            <div class="ts-bar" id="ts-bar"></div>
+        </div>
 
-    <!-- CONTROLS -->
-    <div class="ts-controls">
-        <button class="ts-btn" id="ts-prev" aria-label="Previous">←</button>
-        <div class="ts-dots" id="ts-dots"></div>
-        <button class="ts-btn" id="ts-next" aria-label="Next">→</button>
-    </div>
-</section>
+        <!-- CONTROLS -->
+        <div class="ts-controls">
+            <button class="ts-btn" id="ts-prev" aria-label="Previous">←</button>
+            <div class="ts-dots" id="ts-dots"></div>
+            <button class="ts-btn" id="ts-next" aria-label="Next">→</button>
+        </div>
+    </section>
 
     <!-- CTA BANNER -->
     <div class="cta-banner">
@@ -371,6 +361,5 @@
 
         </div>
     </div>
-
 
 @endsection

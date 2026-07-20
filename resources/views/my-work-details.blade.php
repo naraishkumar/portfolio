@@ -8,6 +8,7 @@
 
 <!-- PROJECT HERO -->
 <div class="project-hero" style="background:{{ $project['gradient'] }};padding:140px 64px 80px;position:relative;overflow:hidden;">
+    <div class="breadcrumb"><a href="/">Home</a> › <span><a href="/my-home">My Work</a></span> › {{ $project['title'] }} </div>
     <img src="{{ asset('assets/my-work/' . $project['image']) }}"
          alt="{{ $project['title'] }} Screenshot"
          style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top;opacity:0.15;">
@@ -15,7 +16,7 @@
     <div style="position:relative;z-index:2;margin:0 auto;">
         <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);color:#fff;border-radius:100px;padding:6px 18px;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:24px;border:1px solid rgba(255,255,255,0.1);">
             <span style="width:8px;height:8px;background:#22c55e;border-radius:50%;display:inline-block;animation:ripple 2s ease-out infinite;"></span>
-            Live Project
+            {{ $project['status'] }}
         </div>
         <h1 style="font-family:'Playfair Display',serif;font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:#fff;letter-spacing:-.03em;line-height:1.05;margin-bottom:20px;">
             {{ $project['title'] }}

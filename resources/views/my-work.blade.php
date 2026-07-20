@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Work - Naraish Kumar')
+@section('title', 'My Work - Naraish Kumar')
 
 @section('page', 'work')
 
@@ -25,6 +25,11 @@
         <button class="filter-btn" data-filter="branding">Branding</button>
         <button class="filter-btn" data-filter="services">Services</button>
         <button class="filter-btn" data-filter="booking">Booking</button>
+        <button class="filter-btn" data-filter="laravel">Laravel</button>
+        <button class="filter-btn" data-filter="vue">Vue.js</button>
+        <button class="filter-btn" data-filter="real-estate">Real Estate</button>
+        <button class="filter-btn" data-filter="isp">ISP Management</button>
+        <button class="filter-btn" data-filter="inventory">Inventory</button>
     </div>
 </div>
 
@@ -42,14 +47,17 @@
                      onerror="this.style.display='none'">
                 <div class="project-visual-dots" style="position:absolute;inset:0;pointer-events:none;"></div>
                 <span class="project-visual-label" style="background:{{ $project['badge_color'] }};border-color:rgba(255,255,255,0.3);z-index:2;{{ strpos($project['badge_color'], 'linear-gradient') !== false ? 'color:#1a0a1a;' : 'color:#fff;' }}">{{ $project['badge'] }}</span>
-                <span class="project-wip" style="background:#22c55e;color:#fff;z-index:2;">{{ $project['status'] }}</span>
+                <span class="project-wip" style="background:#22c55e;color:#fff; z-index:2;">
+                    {{  $project['status'] }}
+
+                </span>
                 <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%);pointer-events:none;"></div>
             </div>
             <div class="project-body">
                 <div class="project-title">{{ $project['title'] }}</div>
                 <p class="project-desc">{{ $project['short_desc'] }}</p>
                 <div class="project-tags">
-                    @foreach($project['tech_stack'] as $tech)
+                    @foreach(array_slice($project['tech_stack'], 0, 4) as $tech)
                     <span class="tag tag-blue">{{ $tech }}</span>
                     @endforeach
                 </div>
@@ -59,10 +67,16 @@
                         <a href="{{ $project['github'] }}" target="_blank" class="project-link" title="GitHub">
                             <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1.01.07 1.54 1.03 1.54 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85.004 1.71.115 2.51.336 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z"/></svg>
                         </a>
+                        @if($project['live_url'] !== '#')
                         <a href="{{ $project['live_url'] }}" target="_blank" class="project-link" title="Live Demo">
                             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6m0 0v6m0-6L10 14"/></svg>
                         </a>
-                        <a href="/project/{{ $project['slug'] }}" class="project-link" title="View Details" style="color:var(--blue);border-color:var(--blue);background:var(--blue-pale);">
+                        @else
+                        <a href="#" class="project-link" title="Coming Soon" style="opacity:0.4;cursor:default;">
+                            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                        @endif
+                        <a href="/my-work/{{ $project['slug'] }}" class="project-link" title="View Details" style="color:var(--blue);border-color:var(--blue);background:var(--blue-pale);">
                             <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
                     </div>
@@ -86,7 +100,7 @@
         <div class="stat-label">Years Experience</div>
     </div>
     <div class="stat-item anim">
-        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-num">7<span>+</span></div>
         <div class="stat-label">Tech Roles</div>
     </div>
     <div class="stat-item anim">
@@ -95,26 +109,48 @@
     </div>
 </div>
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIALS - SLIDER STYLE -->
 <section class="testimonial-section">
-    <div class="section-badge anim"><span class="dot"></span>What Clients Say</div>
-    <h2 class="section-heading anim" style="margin-top:12px;">Happy <span class="blue">Clients</span></h2>
-    <div class="testimonial-grid">
-        @foreach($projects as $project)
-            @if(isset($project['testimonial']))
-            <div class="testi-card anim">
-                <div class="testi-quote">"</div>
-                <p class="testi-text">{{ $project['testimonial']['quote'] }}</p>
-                <div class="testi-author">
-                    <div class="testi-avatar">{{ $project['testimonial']['avatar'] }}</div>
-                    <div>
-                        <div class="testi-name">{{ $project['testimonial']['name'] }}</div>
-                        <div class="testi-role">{{ $project['testimonial']['role'] }}</div>
+    <div class="section-badge anim">
+        <span class="dot"></span>What Clients Say
+    </div>
+    <h2 class="section-heading anim">
+        Happy <span class="blue">Clients</span>
+    </h2>
+
+    <!-- SLIDER VIEWPORT -->
+    <div class="ts-viewport">
+        <div class="ts-track" id="ts-track">
+
+            @foreach($projects as $project)
+                @if(isset($project['testimonial']))
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <p class="testi-text">{{ $project['testimonial']['quote'] }}</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">{{ $project['testimonial']['avatar'] }}</div>
+                        <div>
+                            <div class="testi-name">{{ $project['testimonial']['name'] }}</div>
+                            <div class="testi-role">{{ $project['testimonial']['role'] }}</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            @endif
-        @endforeach
+                @endif
+            @endforeach
+
+        </div><!-- /.ts-track -->
+    </div><!-- /.ts-viewport -->
+
+    <!-- PROGRESS BAR -->
+    <div class="ts-progress">
+        <div class="ts-bar" id="ts-bar"></div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="ts-controls">
+        <button class="ts-btn" id="ts-prev" aria-label="Previous">←</button>
+        <div class="ts-dots" id="ts-dots"></div>
+        <button class="ts-btn" id="ts-next" aria-label="Next">→</button>
     </div>
 </section>
 
@@ -149,6 +185,7 @@
             });
         });
     });
+
 </script>
 
 @endsection
