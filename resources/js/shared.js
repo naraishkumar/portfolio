@@ -60,7 +60,7 @@
           </a>
 
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/naraish-kumar01/"
+          <a href="https://www.linkedin.com/in/naraish-kumar01"
              class="footer-social"
              title="LinkedIn"
              target="_blank"
@@ -105,7 +105,7 @@
           </a>
 
         <!-- Instagram -->
-        <a href="https://www.instagram.com/naraishkumar.official/"
+        <a href="https://www.instagram.com/naraishkumar.official"
             class="footer-social"
             target="_blank"
             rel="noopener noreferrer"
@@ -147,7 +147,7 @@
         <ul>
           <li><a href="mailto:naraishkumar55@gmail.com">naraishkumar55@gmail.com</a></li>
           <li><a href="tel:+923060267456">+92 306 0267456</a></li>
-          <li><a href="#">Rahim Yar Khan, Pakistan</a></li>
+          <li><a href="">Rahim Yar Khan, Pakistan</a></li>
         </ul>
       </div>
 
@@ -346,4 +346,107 @@
         });
     }
 
+})();
+
+
+/* ══════════════════════════════════════════
+   TESTIMONIAL SLIDER
+   Add this inside the shared.js IIFE,
+   after the existing "REVEAL ANIMATION" block
+   (or at the bottom, before the closing })() )
+   ══════════════════════════════════════════ */
+
+(function initTestimonialSlider() {
+    const track  = document.getElementById('ts-track');
+    const bar    = document.getElementById('ts-bar');
+    const dotsEl = document.getElementById('ts-dots');
+    const prevBtn = document.getElementById('ts-prev');
+    const nextBtn = document.getElementById('ts-next');
+
+    if (!track) return; // only runs on pages that have the slider
+
+    const TOTAL    = track.children.length;
+    const INTERVAL = 5000;
+    let current = 0;
+    let autoTimer, barTimer, barWidth = 0;
+
+    /* how many cards fit at the current breakpoint */
+    function getVisible() {
+        if (window.innerWidth <= 600)  return 1;
+        if (window.innerWidth <= 900)  return 2;
+        return 3;
+    }
+
+    /* ── build dot indicators ── */
+    function buildDots() {
+        dotsEl.innerHTML = '';
+        const max = TOTAL - getVisible();
+        for (let i = 0; i <= max; i++) {
+            const pip = document.createElement('button');
+            pip.className = 'ts-pip' + (i === current ? ' active' : '');
+            pip.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+            pip.addEventListener('click', () => goTo(i, true));
+            dotsEl.appendChild(pip);
+        }
+    }
+
+    function updateDots() {
+        dotsEl.querySelectorAll('.ts-pip').forEach((p, i) =>
+            p.classList.toggle('active', i === current)
+        );
+    }
+
+    /* ── slide to index ── */
+    function goTo(idx, resetAuto) {
+        const max   = TOTAL - getVisible();
+        current     = Math.max(0, Math.min(idx, max));
+        const cardW = track.children[0].offsetWidth;
+        const gap   = 24; // must match CSS gap value
+        track.style.transform = `translateX(-${current * (cardW + gap)}px)`;
+        updateDots();
+
+        if (resetAuto) {
+            clearInterval(autoTimer);
+            startBar();
+            startAuto();
+        }
+    }
+
+    /* ── progress bar ── */
+    function startBar() {
+        clearInterval(barTimer);
+        barWidth = 0;
+        bar.style.width = '0%';
+        const step = 100 / (INTERVAL / 100);
+        barTimer = setInterval(() => {
+            barWidth = Math.min(barWidth + step, 100);
+            bar.style.width = barWidth + '%';
+            if (barWidth >= 100) clearInterval(barTimer);
+        }, 100);
+    }
+
+    /* ── auto-advance ── */
+    function startAuto() {
+        autoTimer = setInterval(() => {
+            const max = TOTAL - getVisible();
+            current = current >= max ? 0 : current + 1;
+            goTo(current, false);
+            startBar();
+        }, INTERVAL);
+    }
+
+    /* ── controls ── */
+    prevBtn.addEventListener('click', () => goTo(current - 1, true));
+    nextBtn.addEventListener('click', () => goTo(current + 1, true));
+
+    /* ── rebuild on resize ── */
+    window.addEventListener('resize', () => {
+        buildDots();
+        goTo(current, false);
+    });
+
+    /* ── kick off ── */
+    buildDots();
+    startBar();
+    startAuto();
 })();

@@ -40,7 +40,7 @@
             <div class="info-card-value">naraishkumar55@gmail.com</div>
           </div>
         </a>
-        <a href="tel:+923000000000" class="info-card anim">
+        <a href="tel:+923060267456" class="info-card anim">
           <div class="info-card-icon">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -69,7 +69,7 @@
             <div class="info-card-value">Rahim Yar Khan, Pakistan</div>
           </div>
         </div>
-        <a href="#" class="info-card anim">
+        <a href="https://www.linkedin.com/in/naraish-kumar01/" target="_blank" class="info-card anim">
           <div class="info-card-icon">
             <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
               <path
