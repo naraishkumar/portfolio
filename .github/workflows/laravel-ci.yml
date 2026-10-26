@@ -25,16 +25,25 @@ jobs:
       - name: Install Composer Dependencies
         run: composer install --prefer-dist --no-interaction --no-progress
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Build Frontend Assets
+        run: npm run build
+
       - name: Prepare Laravel Environment
         run: |
           cp .env.example .env
           php artisan key:generate
 
-      - name: Create SQLite Database
-        run: touch database/database.sqlite
-
       - name: Run Laravel Tests
         env:
+          APP_ENV: testing
           DB_CONNECTION: sqlite
           DB_DATABASE: ':memory:'
           SESSION_DRIVER: array
