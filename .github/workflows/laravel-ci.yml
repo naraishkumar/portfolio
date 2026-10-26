@@ -30,12 +30,12 @@ jobs:
           cp .env.example .env
           php artisan key:generate
 
-      - name: Create MySQL Database
-        run: touch database/database.MySQL
+      - name: Create mysql Database
+        run: touch database/database.mysql
 
       - name: Run Laravel Tests
         env:
-          DB_CONNECTION: MySQL
+          DB_CONNECTION: mysql
           DB_DATABASE: ':memory:'
           SESSION_DRIVER: array
           CACHE_STORE: array
